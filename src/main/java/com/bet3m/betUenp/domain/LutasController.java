@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/lutas")
+
 public class LutasController {
 
     private final LutasService lutasService;
@@ -37,9 +38,9 @@ public class LutasController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deletaLuta(@PathVariable Integer id){
+    public ResponseEntity<String> deletaLuta(@PathVariable Integer id){
         lutasService.deletar(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok("Luta com id " + id + " deletado");
     }
 
 }
