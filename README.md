@@ -13,6 +13,11 @@ Base URL rodando localmente: `http://localhost:8080/lutas`
 
 Acessar remotamente: `https://unconcludable-prince-aerobically.ngrok-free.dev/lutas`
 
+### Header
+
+Key: X-API-KEY
+Value: bet3M-UENP
+
 ---
 
 ### POST `/lutas` — Criar luta
