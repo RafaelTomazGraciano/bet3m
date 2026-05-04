@@ -8,7 +8,7 @@ import org.springframework.security.core.authority.AuthorityUtils;
 public class AuthenticationService {
 
     private static final String AUTH_TOKEN_HEADER_NAME = "X-API-KEY";
-    private static final String AUTH_TOKEN = "bet3M-UENP-API-KEY";
+    private static final String AUTH_TOKEN = "bet3M-UENP";
 
     public static Authentication getAuthentication(HttpServletRequest request){
         String apiKey = request.getHeader(AUTH_TOKEN_HEADER_NAME);
