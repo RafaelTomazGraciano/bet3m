@@ -9,6 +9,9 @@ WORKDIR /app
 COPY gradle/ gradle/
 COPY gradlew build.gradle settings.gradle ./
 
+# Garante permissão de execução no gradlew
+RUN chmod +x gradlew
+
 # Baixa as dependências sem compilar (cache layer)
 RUN ./gradlew dependencies --no-daemon
 
